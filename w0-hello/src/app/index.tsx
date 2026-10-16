@@ -1,7 +1,9 @@
 import { StyleSheet, Text, View } from "react-native";
 
-// Replace with your own first name and last name.
-const STUDENT_NAME: string = "Prénom Nom";
+import { Counter } from "@/components/counter";
+import { OnlineTimer } from "@/components/online-timer";
+
+const STUDENT_NAME: string = "Shahd Bargougui";
 
 export default function Index() {
   return (
@@ -9,6 +11,8 @@ export default function Index() {
       <Text style={styles.title}>w0-hello</Text>
       <Text style={styles.text}>{STUDENT_NAME}</Text>
       <Text style={styles.text}>IAM2 - React Native avec Expo</Text>
+      <Counter label="Compteur" step={2} />
+      <OnlineTimer contactId="contact-1" />
     </View>
   );
 }
