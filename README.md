@@ -1,56 +1,38 @@
-# Welcome to your Expo app 👋
+﻿# s3-mini-shop
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Séance 03 - Mini-Shop (DummyJSON) (IAM2, React Native avec Expo)
 
-## Get started
+## Auteur
 
-1. Install dependencies
+Bella
 
-   ```bash
-   npm install
-   ```
+## Ce qui est réalisé
 
-2. Start the app
+- Client fetch typé api<T>() avec ApiError et en-tête Bearer
+- Catalogue à défilement infini avec useInfiniteQuery, tirer pour rafraîchir, états chargement, erreur et vide
+- Filtre par catégorie et recherche avec délai (debounce)
+- Fiche produit product/[id]
+- Connexion DummyJSON, jeton dans SecureStore, session partagée avec un Context, profil /auth/me
+- Panier local SQLite lu avec useQuery et modifié avec useMutation
+- Défi (panier distant avec mise à jour optimiste) : fait ou non fait
 
-   ```bash
-   npx expo start
-   ```
+## Captures d'écran
 
-In the output, you'll find options to open the app in a
+![Catalogue sur le téléphone](screenshots/s3-catalogue.png)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+![Panier sur le téléphone](screenshots/s3-cart.png)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Environnement
 
-## Get a fresh project
+- Expo SDK : 57
+- Téléphone : modèle et version du système
+- Expo Go : version affichée dans l'application
+- Compte de démonstration utilisé : emilys (compte public de DummyJSON)
 
-When you're ready, run:
+## Réponse du défi
 
-```bash
-npm run reset-project
-```
+Trois lignes : pourquoi le panier renvoyé par DummyJSON n'apparaît pas ensuite dans GET /carts, et ce qui changerait avec un vrai serveur.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Sortie de npx expo-doctor@latest
 
-### Other setup steps
-
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Collez ici la sortie complète de la commande, dans un bloc de code.
