@@ -35,4 +35,8 @@ Trois lignes : pourquoi le panier renvoyé par DummyJSON n'apparaît pas ensuite
 
 ## Sortie de npx expo-doctor@latest
 
-Collez ici la sortie complète de la commande, dans un bloc de code.
+```text
+Running 21 checks on your project...
+21/21 checks passed. No issues detected!
+```
+
